@@ -6,6 +6,8 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /RobotModel1
+        - /RobotModel1/Description Topic1
       Splitter Ratio: 0.5
     Tree Height: 555
   - Class: rviz_common/Selection
@@ -47,10 +49,125 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot_description
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fl_foot:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fl_l0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fl_l1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fl_l2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fr_foot:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fr_l0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fr_l1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fr_l2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rl_foot:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rl_l0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rl_l1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rl_l2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rr_foot:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rr_l0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rr_l1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rr_l2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Mass Properties:
+        Inertia: false
+        Mass: false
+      Name: RobotModel
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: map
+    Fixed Frame: body
     Frame Rate: 30
   Name: root
   Tools:
@@ -93,7 +210,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 10
+      Distance: 2.0058364868164062
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -108,10 +225,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.785398006439209
+      Pitch: 0.3403981626033783
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.785398006439209
+      Yaw: 1.0603985786437988
     Saved: ~
 Window Geometry:
   Displays:
@@ -129,5 +246,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1200
-  X: 72
-  Y: 387
+  X: 678
+  Y: 344
