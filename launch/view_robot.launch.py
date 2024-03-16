@@ -51,7 +51,8 @@ def launch_setup(context, *args, **kwargs):
         parameters=[robot_description],
         remappings=[
             ("joint_states", LaunchConfiguration('input_states')),
-        ]
+        ],
+        condition=IfCondition(LaunchConfiguration("gui")),
     )
     # Initialize Arguments
     gui = LaunchConfiguration("gui")

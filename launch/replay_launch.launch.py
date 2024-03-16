@@ -87,7 +87,7 @@ def generate_launch_description():
             DeclareLaunchArgument(name, default_value=default_value)
         )
     
-    add_launch_arg('rosbag_path', "")
+    add_launch_arg('rosbag_path')
     add_launch_arg('robot_model', "intention")
     add_launch_arg('input_states', '/hb40/joint_states')
 
