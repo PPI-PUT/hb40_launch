@@ -49,9 +49,9 @@ def launch_setup(context, *args, **kwargs):
         executable="robot_state_publisher",
         output="both",
         parameters=[robot_description],
-        remappings=[
-            ("joint_states", LaunchConfiguration('input_states')),
-        ],
+        # remappings=[
+        #     ("joint_states", LaunchConfiguration('input_states')),
+        # ],
         condition=IfCondition(LaunchConfiguration("gui")),
     )
     # Initialize Arguments
